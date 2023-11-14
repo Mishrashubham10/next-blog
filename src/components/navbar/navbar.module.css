@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6.25rem;
+}
+
+.social {
+    flex: 1;
+    display: flex;
+    gap: .5rem;
+}
+
+.logo {
+    flex: 1;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.links {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1280px) {
+    .logo {
+        font-size: 2rem;
+    }
+
+    .links {
+        font-size: 1rem;
+        gap: .6rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .social {
+        display: none;
+    }
+
+    .logo {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .links {
+        justify-content: flex-end;
+    }
+
+    .link {
+        display: none;
+    }
+}
