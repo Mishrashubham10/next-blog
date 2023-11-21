@@ -1,0 +1,96 @@
+.infoContainer {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.textContainer {
+  flex: 1;
+}
+
+.title {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.userImageContainer {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.avatar {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.userTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: var(--softTextColor);
+}
+
+.username {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.imageContainer {
+  flex: 1;
+  height: 350px;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  gap: 3rem;
+}
+
+.post {
+  flex: 5;
+  margin-top: 3.5rem;
+}
+
+.description p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 1536px) {
+  .title {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .imageContainer {
+    display: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .description p {
+    font-size: 1.1rem;
+  }
+}
